@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+#papa {
+  background-color: rgb(95, 95, 95);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#title {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: rgb(139, 152, 152); */
+  height: 60px;
+  width: 600px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 15px;
+}
+
+input[type="checkbox"] {
+  appearance: none; /* Hide default appearance */
+  width: 26px; /* Width of the custom checkbox */
+  height: 26px; /* Height of the custom checkbox */
+  border: 2px solid #555; /* Border color */
+  border-radius: 40px; /* Rounded corners */
+  background-color: rgb(49, 49, 49); /* Background color */
+  cursor: pointer;
+  position: relative;
+}
+
+/* Checkbox checked state */
+input[type="checkbox"]:checked {
+  background-color: #6e6d6d; /* Change background color when checked */
+}
+
+/* Checkmark style */
+input[type="checkbox"]::after {
+  content: '\2714'; /* Unicode checkmark character */
+  font-size: 15px; /* Adjust size as needed */
+  color: white; /* Color of the checkmark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* Initially hidden */
+}
+
+/* Show checkmark when checkbox is checked */
+input[type="checkbox"]:checked::after {
+  visibility: visible;
+}
+
+input[type="checkbox"]:hover {
+  border-color: rgb(178, 177, 177); /* Change border color on hover */
+}
+
+#enter:focus {
+  outline: none;
+}
+
+#list {
+  background-color: rgb(49, 49, 49);
+  min-height: 40px;
+  max-height: 600px;
+  width: 600px;
+  margin-top: 28px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+
+#arrange {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 55px;
+  width: 580px;
+}
+
+.arr {
+  background-color: rgb(49, 49, 49);
+  color: rgb(165, 165, 165);
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.arr span {
+  pointer-events: none;
+}
+
+.arr:hover span {
+  pointer-events: auto;
+  color: rgb(234, 234, 234);
+}
+
+#input {
+  margin-top: 40px;
+  height: 60px;
+  width: 600px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#enter {
+  height: 55px;
+  width: 550px;
+  border: none;
+  background-color: rgb(49, 49, 49);
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-left: 21px;
+}
+
+.boxes {
+  min-height: 60px;
+  width: 600px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #626262;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.mini {
+  min-height: 60px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.store {
+  min-height: 60px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checks {
+  margin-top: 19px;
+}
+
+.todos {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.deletes {
+  background-color: rgb(49, 49, 49);
+  color: #909090;
+  height: 40px;
+  width: 60px;
+  border: none;
+  font-size: 25px;
+}
+
+.deletes:hover {
+  color: #dddddd;
+}
